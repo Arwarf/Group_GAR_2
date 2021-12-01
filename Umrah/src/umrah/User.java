@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package umrah;
 
 
 public class User {
-    Appointment appointment = new Appointment();
-    Permits permits = new Permits();
-    
+    private Appointment appointment;
+    private Permit currPermit;
+    private ArrayList<Permit> prevPermits = new ArrayList<Permit>();
+
+    public User(String Fname, String Lname, String Email, String Password, long PhoneNum, long National_ID) {
+        super(Fname, Lname, Email, Password, PhoneNum, National_ID);
+    }
     public void CreateAccount() {
 
     }
